@@ -11,6 +11,11 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    cinemaRouter,mineRouter,miveRouter
+    cinemaRouter,mineRouter,miveRouter,
+    {
+      path:'/*',
+      redirect:'/mive'
+
+    }
   ]
 })
